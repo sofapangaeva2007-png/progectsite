@@ -1,0 +1,111 @@
+/* *{
+    margin:0;
+    padding:0;
+} */
+html {
+    background-image:url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    padding-top:0;
+    color: black; /* текст белым, чтобы было видно на фоне */
+}
+
+
+h1 {
+    font-size: 40px;
+    font-style: oblique;
+    text-align: center; 
+    width: 100%;        
+    margin: 0;          
+    padding: 0;    
+    position: auto; 
+    
+}
+p{
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.5;
+    font-weight:lighter;
+    /* background: rgba(100, 100, 100, 0.7);полупрозрачный фон */
+    padding:100px;
+}
+
+/* content */
+.color {
+    color: pink;
+}
+
+.list-container{
+    border-style:solid;
+    display:inline-block;
+    border-width:1px;
+    padding:5px;
+
+   
+}
+.list-container>p{
+    text-align: center;
+    font-weight:bold;
+}
+img{
+    float:right;
+    border-style:dotted;
+    padding:1px;
+    margin-left:0.1px;
+    margin-top: 100px;
+    width:500px;
+}
+
+/* верхняя статик панель */
+
+.nav{
+    padding: space-between;
+}
+
+.nav-container{
+    justify-content:space-between;
+    position:fixed;
+    left:0;
+    right:0;
+    padding:0px;
+    display:flex;
+    background-color: rgb(145, 149, 185);
+    
+}
+.nav-container>nav>ul{
+    display:flex;
+    list-style: none;
+    padding:0;
+    margin:0;
+    
+}
+
+.nav-container>nav>ul>li>a{
+ display:block;
+ padding:10px;
+ border-style:solid;
+ border-width:0.5px;
+ color:blue;
+}
+
+
+ @media screen {
+.nav-container{
+    position:fixed;
+    width:97vw;
+    
+	align-items: center;
+	padding: 0 10px;
+	background-color: rgb(107, 110, 139);
+	border-radius: 10px 10px;
+    }
+} 
